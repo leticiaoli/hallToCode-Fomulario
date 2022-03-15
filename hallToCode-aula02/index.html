@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h1 class="title">Faça seu cadastro</h1>
+        <form>
+            <div class="box">
+                <label class="label-text" for="name-field">Nome completo</label>
+                <input id="name-field" type="text" placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="box-date-country">
+                <div class="box-date">
+                    <label for="date-field">Data de nascimento</label>
+                    <input id="date-field" type="date">
+                </div>
+    
+                <div class="box-country">
+                    <label for="country-field">País*</label>
+                    <select class="select-coutry" id="country-field">
+                        <option>Selecionar</option>
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                        <option>Paraguai</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="box-gender">
+                <legend>Gênero</legend>
+                <div class="box-gender-options">
+                    <input class="imput-radio" type="radio" name="genero" id="feminine-gender">
+                    <label for="feminine-gender"> Feminino</label>
+                    <input class="imput-radio" type="radio" name="genero" id="male-gender">
+                    <label for="male-gender"> Masculino </label>
+                    <input class="imput-radio" type="radio" name="genero" id="undeclared-gender">
+                    <label for="undeclared-gender"> Não declarar </label>
+                </div>
+            </div>
+
+            <div class="box">
+                <label for="email-field">E-mail</label>
+                <input id="email-field"type="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="box">
+                <label for="password-field">Senha</label>
+                <input id="password-field" type="password" placeholder="Crie uma senha">
+            </div>
+
+            <div class="box">
+                <label for="confirmPassword-field">Confirmar senha</label>
+                <input id="confirmPassword-field" type="password" placeholder="Confirmar senha">
+            </div>
+
+            <div class="box-terms">
+                <input class="input-terms"type="checkbox">
+                <label class="label-terms">Aceito os <a href="#">termos e condições</a> e concordo com as <a href="#">políticas de
+                        privacidade</a> do Hall To Code.</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+            <p>Já tem uma conta no Hall to code? <a href="#">Entre agora</a></p>
+        </form>
+    </section>
+</body>
+
+</html>
