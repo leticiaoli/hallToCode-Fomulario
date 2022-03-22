@@ -13,20 +13,20 @@
 </head>
 
 <body>
-    <section>
+    <section class="container">
         <h1 class="title">Faça seu cadastro</h1>
         <form>
             <div class="box">
                 <label class="label-text" for="name-field">Nome completo</label>
-                <input id="name-field" type="text" placeholder="Digite seu nome completo">
+                <input id="name-field" type="text" name="name" placeholder="Digite seu nome completo" required>
             </div>
 
             <div class="box-date-country">
                 <div class="box-date">
                     <label for="date-field">Data de nascimento</label>
-                    <input id="date-field" type="date">
+                    <input id="date-field" type="date" name="date">
                 </div>
-    
+
                 <div class="box-country">
                     <label for="country-field">País*</label>
                     <select class="select-coutry" id="country-field">
@@ -38,42 +38,49 @@
                 </div>
             </div>
 
-            <div class="box-gender">
+            <div class="box-genre">
                 <legend>Gênero</legend>
-                <div class="box-gender-options">
-                    <input class="imput-radio" type="radio" name="genero" id="feminine-gender">
-                    <label for="feminine-gender"> Feminino</label>
-                    <input class="imput-radio" type="radio" name="genero" id="male-gender">
-                    <label for="male-gender"> Masculino </label>
-                    <input class="imput-radio" type="radio" name="genero" id="undeclared-gender">
-                    <label for="undeclared-gender"> Não declarar </label>
+                <div class="options-genre">
+                    <div class="select-genre">
+                        <input class="imput-radio" type="radio" name="genero" id="feminine-genre">
+                        <label for="feminine-genre"> Feminino</label>
+                    </div>
+                    <div class="select-genre">
+                        <input class="imput-radio" type="radio" name="genero" id="male-genre">
+                        <label for="male-genre"> Masculino </label>
+                    </div>
+                    <div class="select-genre">
+                        <input class="imput-radio" type="radio" name="genero" id="undeclared-genre">
+                        <label for="undeclared-genre"> Não declarar </label>
+                    </div>
                 </div>
             </div>
 
             <div class="box">
                 <label for="email-field">E-mail</label>
-                <input id="email-field"type="email" placeholder="Digite seu e-mail">
+                <input id="email-field" type="email" name="email" placeholder="Digite seu e-mail" required>
             </div>
 
             <div class="box">
                 <label for="password-field">Senha</label>
-                <input id="password-field" type="password" placeholder="Crie uma senha">
+                <input id="password-field" type="password" name="password" placeholder="Crie uma senha" required>
             </div>
 
             <div class="box">
                 <label for="confirmPassword-field">Confirmar senha</label>
-                <input id="confirmPassword-field" type="password" placeholder="Confirmar senha">
+                <input id="confirmPassword-field" type="password" name="password" placeholder="Confirmar senha" required>
             </div>
 
             <div class="box-terms">
-                <input class="input-terms"type="checkbox">
-                <label class="label-terms">Aceito os <a href="#">termos e condições</a> e concordo com as <a href="#">políticas de
+                <input class="input-terms" name="checkbox" type="checkbox" required>
+                <label class="label-terms">Aceito os <a href="#">termos e condições</a> e concordo com as <a
+                        href="#">políticas de
                         privacidade</a> do Hall To Code.</label>
             </div>
 
             <button type="submit">Cadastrar</button>
 
-            <p>Já tem uma conta no Hall to code? <a href="#">Entre agora</a></p>
+            <p class="account">Já tem uma conta no Hall to code? <a href="./account.html">Entre agora</a></p>
         </form>
     </section>
 </body>
